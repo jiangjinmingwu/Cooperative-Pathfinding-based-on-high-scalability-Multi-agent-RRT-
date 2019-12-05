@@ -1,0 +1,14 @@
+load('marrts.mat');
+solutions = solutions_marrts;
+load('marrts_1.mat');
+solutions(:,:,9:11) = solutions_marrts(:,:,9:11);
+load('marrts_2.mat');
+solutions(:,:,12:14) = solutions_marrts(:,:,12:14);
+load('marrts_3.mat');
+solutions(:,:,15:17) = solutions_marrts(:,:,15:17);
+load('marrts_4.mat');
+solutions(:,:,18:20) = solutions_marrts(:,:,18:20);
+load('marrts_5.mat');
+solutions(:,:,21:23) = solutions_marrts(:,:,21:23);
+solutions_marrts = solutions;
+save('marrts.mat','solutions_marrts');
